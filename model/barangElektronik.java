@@ -11,29 +11,29 @@ public abstract class barangElektronik extends barang {
         this.merk = merk;
         this.warna = warna;
     }
-}
 
-// getter
-public String getMerk() {
-    return merk;
-}
 
-public String getWarna() {
-    return warna;
-}
+    // getter
+    public String getMerk() {
+        return merk;
+    }
 
-// setter
-public void setMerk(String merk) {
-    this.merk = merk;
-}
+    public String getWarna() {
+        return warna;
+    }
 
-public void setWarna(String warna) {
-    this.warna = warna;
-}
+    // setter
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
 
-// implementasi method abstract dari class barang
-@Override
-public String getJenisBarang() {
-    return "Elektronik";
-}
+    public void setWarna(String warna) {
+        this.warna = warna;
+    }
 
+    // implementasi method abstract dari class barang
+    @Override
+    public String getJenisBarang() {
+        return "Elektronik";
+   }
+}
