@@ -64,7 +64,6 @@ public void setKategoriBarang(String kategoriBarang) {
 public abstract String getInfoBarang();
 
 // polymorphism (method overloading)
-
 // method untuk mengurangi jumlah barang
 public void kurangiJumlahBarang(int jumlah) {
     if (jumlahBarang <= this.jumlahBarang) {
