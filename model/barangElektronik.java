@@ -1,7 +1,7 @@
 package model;
 
 // class abstract yg mewarisi class barang
-public abstract class barangElektronik extends barang {
+public class barangElektronik extends barang {
     protected String merk;
     protected String warna;
     
@@ -34,6 +34,11 @@ public abstract class barangElektronik extends barang {
     // implementasi method abstract dari class barang
     @Override
     public String getJenisBarang() {
-        return "Elektronik";
+        return "Elektronik - Merk : " + merk + " (" + warna + " warna)";
+   }
+
+   @Override
+   public String toString() {
+    super.toString() + " | " + getJenisBarang();
    }
 }
