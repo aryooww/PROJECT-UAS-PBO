@@ -34,7 +34,7 @@ public class barangElektronik extends barang {
     // implementasi method abstract dari class barang
     @Override
     public String getJenisBarang() {
-        return "Elektronik - Merk : " + merk + " (" + warna + " warna)";
+        return "Elektronik - Merk : " + merk + " (" + warna + " )";
    }
 
    @Override
