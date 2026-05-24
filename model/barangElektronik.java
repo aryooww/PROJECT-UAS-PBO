@@ -1,17 +1,25 @@
 package model;
 
-// class abstract yg mewarisi class barang
 public class barangElektronik extends barang {
+
     protected String merk;
     protected String warna;
-    
+
     // constructor
-    public barangElektronik(String namaAlat, String kodeBarang, int jumlahBarang, String kondisiBarang, String kategoriBarang, String merk, String warna) {
-        super(namaAlat, kodeBarang, jumlahBarang, kondisiBarang, kategoriBarang);
+    public barangElektronik(String namaAlat,
+                            String kodeBarang,
+                            int jumlahBarang,
+                            String kondisiBarang,
+                            String kategoriBarang,
+                            String merk,
+                            String warna) {
+
+        super(namaAlat, kodeBarang, jumlahBarang,
+              kondisiBarang, kategoriBarang);
+
         this.merk = merk;
         this.warna = warna;
     }
-
 
     // getter
     public String getMerk() {
@@ -31,14 +39,14 @@ public class barangElektronik extends barang {
         this.warna = warna;
     }
 
-    // implementasi method abstract dari class barang
+    // implementasi abstract method
     @Override
-    public String getJenisBarang() {
-        return "Elektronik - Merk : " + merk + " (" + warna + " )";
-   }
+    public String getInfoBarang() {
+        return "Elektronik - Merk : " + merk + " ( " + warna + " )";
+    }
 
-   @Override
-   public String toString() {
-    super.toString() + " | " + getJenisBarang();
-   }
+    @Override
+    public String toString() {
+        return super.toString() + " | " + getInfoBarang();
+    }
 }
