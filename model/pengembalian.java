@@ -59,4 +59,36 @@ public class pengembalian {
         return kondisiBarang;
     }
     
+    // setter
+    public void setNamaPeminjam(String namaPeminjam) {
+        this.namaPeminjam = namaPeminjam;
+    }
+
+    public void setNIMPeminjam(int NIMPeminjam) {
+        this.NIMPeminjam = NIMPeminjam;
+    }
+
+    public void setNamaBarang(String namaBarang) {
+        this.namaBarang = namaBarang;
+    }
+
+    public void setKodeBarang(String kodeBarang) {
+        this.kodeBarang = kodeBarang;
+    }
+
+    public void setJumlahPinjam(int jumlahPinjam) {
+        this.jumlahPinjam = jumlahPinjam;
+    }
+
+    public void setTanggalPinjam(LocalDate tanggalPinjam) {
+        this.tanggalPinjam = tanggalPinjam;
+    }
+
+    public void setTanggalKembali(LocalDate tanggalKembali) {
+        this.tanggalKembali = tanggalKembali;
+    }
+
+    public void setKondisiBarang(String kondisiBarang) {
+        this.kondisiBarang = kondisiBarang;
+    }
 }
