@@ -91,4 +91,10 @@ public class pengembalian {
     public void setKondisiBarang(String kondisiBarang) {
         this.kondisiBarang = kondisiBarang;
     }
+
+    // override method toString untuk menampilkan informasi pengembalian barang
+    @Override
+    public String toString() {
+         return "namaPeminjam: " + namaPeminjam + ", NIMPeminjam: " + NIMPeminjam + ", namaBarang: " + namaBarang + ", kodeBarang: " + kodeBarang + ", jumlahPinjam: " + jumlahPinjam + ", tanggalPinjam: " + tanggalPinjam + ", tanggalKembali: " + tanggalKembali + ", kondisiBarang: " + kondisiBarang;
+    }
 }
