@@ -96,4 +96,10 @@ public class barangMasukKeluar {
         this.petugas = petugas;
     }
 
+    // Override toString untuk menampilkan informasi barang masuk/keluar
+    @Override
+    public String toString() {
+        return "ID Transaksi: " + idTransaksi + ", Nama Barang: " + namaBarang + ", Kode Barang: " + kodeBarang + ", Tipe: " + tipe + ", Jumlah Barang: " + jumlahBarang + ", Tanggal Transaksi: " + tanggalTransaksi + ", Keterangan: " + keterangan    + ", Petugas: " + petugas;
+    }
+
 }
